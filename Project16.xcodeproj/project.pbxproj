@@ -14,6 +14,7 @@
 		551F859226D45F3400AC2F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551F859126D45F3400AC2F9B /* Assets.xcassets */; };
 		551F859526D45F3400AC2F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551F859326D45F3400AC2F9B /* LaunchScreen.storyboard */; };
 		551F859D26D4630D00AC2F9B /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F859C26D4630D00AC2F9B /* Capital.swift */; };
+		551F859F26D5506400AC2F9B /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F859E26D5506400AC2F9B /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		551F859426D45F3400AC2F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551F859626D45F3400AC2F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551F859C26D4630D00AC2F9B /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		551F859E26D5506400AC2F9B /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				551F858C26D45F3200AC2F9B /* ViewController.swift */,
 				551F859C26D4630D00AC2F9B /* Capital.swift */,
 				551F858E26D45F3200AC2F9B /* Main.storyboard */,
+				551F859E26D5506400AC2F9B /* CityViewController.swift */,
 				551F859126D45F3400AC2F9B /* Assets.xcassets */,
 				551F859326D45F3400AC2F9B /* LaunchScreen.storyboard */,
 				551F859626D45F3400AC2F9B /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				551F858D26D45F3200AC2F9B /* ViewController.swift in Sources */,
+				551F859F26D5506400AC2F9B /* CityViewController.swift in Sources */,
 				551F858926D45F3200AC2F9B /* AppDelegate.swift in Sources */,
 				551F859D26D4630D00AC2F9B /* Capital.swift in Sources */,
 				551F858B26D45F3200AC2F9B /* SceneDelegate.swift in Sources */,
