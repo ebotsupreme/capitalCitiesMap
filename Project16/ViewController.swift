@@ -21,6 +21,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let washington = Capital(title: "Washington D.C.", coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667), info: "Named after George himself.")
     
         mapView.addAnnotations([london, oslo, paris, rome, washington])
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(toggleMap))
     }
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -53,6 +55,32 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+    }
+    
+    @objc func toggleMap() {
+        let ac = UIAlertController(title: "Toggle Map", message: nil, preferredStyle: .actionSheet)
+        let satelliteAction = UIAlertAction(title: "Satellite", style: .default, handler: displayMapType)
+        let hybridAction = UIAlertAction(title: "Hybrid", style: .default, handler: displayMapType)
+        let standardAction = UIAlertAction(title: "Standard", style: .default, handler: displayMapType)
+        ac.addAction(satelliteAction)
+        ac.addAction(hybridAction)
+        ac.addAction(standardAction)
+        present(ac, animated: true)
+    }
+    
+    func displayMapType(action: UIAlertAction) {
+        if let title = action.title {
+            switch title {
+            case "Satellite":
+                mapView.mapType = .satellite
+            case "Hybrid":
+                mapView.mapType = .hybrid
+            case "Standard":
+                mapView.mapType = .standard
+            default:
+                break
+            }
+        }
     }
 
 }
